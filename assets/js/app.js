@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".rslides").responsiveSlides();
 
-    $('.owl-carousel').owlCarousel({
+    $('#owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
         autoplay: true,
@@ -13,6 +13,22 @@ $(document).ready(function () {
             },
             1000:{
                 items: 3,
+            }
+        }
+    });
+
+    $('#owl-carousel1').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        responsiveClass: true,
+        responsive:{
+            0:{
+                items: 1
+            },
+            1000:{
+                items: 1
             }
         }
     });
